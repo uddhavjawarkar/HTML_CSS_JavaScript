@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript">
+		var x=function(a,b)
+		{
+			alert("Sum"+(a+b));
+		};
+		x(11,12);
+
+		var y=(a,b)=>alert("Additiiiioooonnnn"+(a+b)); 
+		y(10,80);
+
+		function greet()
+		{
+			console.log("welcome");
+		}
+
+		function login(usernm,pass,f1)
+		{
+			f1(); 
+			if(usernm=="Admin" && pass=="123");
+			else
+				console.log("Invalid Login");
+		}
+		login("Admin","123",greet);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

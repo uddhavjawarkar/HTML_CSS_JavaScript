@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript">
+		let arr=[11,12,13,14,"Deepa"];
+		console.log(arr);
+
+		//to push data dynamically in array push and inshift and push add data at the end of the array and unshift at the beginning of array-->
+		arr.push("Ajinkya");
+		arr.push(90);
+
+		arr.unshift("Rupesh");
+		console.log(arr);
+
+		//remove elements from last
+		var remove=arr.pop();  
+		console.log(arr);                                
+
+		  //remove element from front/first
+		  arr.shift();
+		  console.log(arr);	
+
+		  //splice,slice
+		  var arr2=arr.slice(1,6); //returns a new array with elelments specified from start to end-1
+		  console.log(arr);	
+		  console.log(arr2); 
+
+		  //splice to add and delete from original array
+		  //['Rupesh',11,12,13,14,'deepa','ajinkya',90]
+		  //splice(index,delete,data to be added)
+
+		  arr.splice(1,2,"A","B","C")
+
+		  console.log(arr);
+
+		  //delete "deepa"
+		  console.log(arr);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
