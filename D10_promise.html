@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript">
+		//let p=new Promise()
+		function ServerCall(url,id)
+		{
+			return new Promise(
+				function(resolve,reject)
+				{
+					//server call
+					var iserror=false;
+					var data="";
+
+					setTimeout(()=>
+					{
+						console.log("time up")
+					
+					if(!iserror)
+						resolve ({"id":101,"name":"Surya","age":25});
+					else
+						reject("Error occured!!!!");
+					 },10000);
+
+				});
+		}
+		var promise=ServerCall("http://thinkq.com",101);
+		console.log(promise);
+		promise.then(d=>{
+			console.log(promise);
+			alert(JSON.stringify(d));
+		},err=>alert(err));
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
+
+
+
+
+
+
+

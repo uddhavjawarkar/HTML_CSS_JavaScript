@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript">
+		function m1()
+		{
+			alert("m1 called");
+		}
+
+		function m2()
+		{
+			alert("m2 called");
+		}
+
+		
+
+	</script>
+
+</head>
+<body>
+	<button onclick="m1()">Add</button>
+	<button id="b1">Add2</button>
+	<script type="text/javascript">
+		var btn=document.getElementById("b1");
+		btn.addEventListener('click',m2);
+
+	</script>
+	
+</body>
+</html>
