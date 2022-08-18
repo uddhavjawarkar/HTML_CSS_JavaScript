@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<script type="text/javascript">
+
+//10.	Explain rest and spread with example?
+
+
+
+//rest oprater
+
+
+   
+    function fun1(...a)
+    {
+
+    	document.write("All Number is : ");
+
+
+    	for(var i = 0 ; i< a.length ; i++)
+    	{
+           document.write(`                  ${a[i]}          <br>`);
+
+    	}
+
+
+    }
+
+
+
+    fun1(10,20,30,40,50,60,70,80,90,100,110,120,130);
+
+
+
+
+
+// spread oprater
+
+
+    
+    function fun2(a,b,c,d,e)
+    {
+
+      document.write("All Numbers addition : <br>");
+
+     
+ 
+
+        document.write(a+b+c+d+e);
+
+    
+
+    }
+
+
+
+
+
+   var arr = [10 , 20 , 30 , 40 ,50] ;
+
+
+   fun2(...arr); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

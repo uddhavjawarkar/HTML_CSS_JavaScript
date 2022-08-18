@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+//3.	WAP in JS to show difference is between == and ===, let var and const?
+
+
+
+   var a = "This is declare as globally so it accsessible globally insdide function as well as outside  <br>";
+
+
+
+   document.write(a);
+
+
+  
+        function fun()
+        {
+        	document.write(a);
+        }
+
+ fun();
+
+
+  // 2nd exxample
+
+
+document.write(" 2nd example <br>");
+
+
+
+
+  function fun1()
+   {
+   	var x = "This is declare insdide function using var keyword so it is not accsessible outside the function <br>" 
+
+   	document.write(x);
+   }
+
+
+
+  // 	document.write(x);   if u trying to acess outside then show error coz u use var keyword to x so it is work inside function not outside
+ 
+   	fun1();
+
+
+
+ 
+// 3rd exxample
+
+
+document.write(" 3rd example <br>");
+
+
+
+
+   function fun3()
+   {
+   	c = "Delclaring C as without var name and it treated accesible inside the fun as well as outside the fun <br>";
+
+   	document.write(c);    
+   }
+
+
+fun3();
+
+
+document.write(c);    
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

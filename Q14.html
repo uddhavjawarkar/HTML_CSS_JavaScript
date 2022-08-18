@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+
+        //14.	Explain async and await with example? 
+
+        function resolveAfter2Seconds() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve('resolved');
+    }, 2000);
+  });
+}
+
+async function asyncCall() {
+		document.write('calling');
+  const result = await resolveAfter2Seconds();
+		document.write(result);
+  // expected output: "resolved"
+}
+
+asyncCall();
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
